@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="POM">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../eclipse-jee-luna-SR2-win32/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="TestNG.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}plugins/org.testng.eclipse_6.10.0.201612030230/lib/testng.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.testng.eclipse_6.10.0.201612030230/lib/jcommander.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.testng.eclipse_6.10.0.201612030230/lib/bsh-2.0b4.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.testng.eclipse_6.10.0.201612030230/lib/snakeyaml.jar"/>
+    </path>
+    <path id="POM.classpath">
+        <pathelement location="bin"/>
+        <path refid="TestNG.libraryclasspath"/>
+        <pathelement location="D:/Lib-Jar/apache-velocity-velocity-1.5.jar.zip"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1.zip"/>
+        <pathelement location="D:/Lib-Jar/selenium-server-standalone-3.0.1.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/extentreports-2.41.2.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/lib/ant-1.7.0.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/lib/ant-launcher-1.7.0.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/lib/bsh-2.0b4.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/lib/bson-3.0.4.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/lib/freemarker-2.3.23.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/lib/hamcrest-core-1.1.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/lib/jcommander-1.48.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/lib/jsoup-1.8.3.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/lib/junit-4.10.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/lib/mongodb-driver-3.0.4.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/lib/mongodb-driver-core-3.0.4.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/lib/snakeyaml-1.15.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/lib/sqlite-jdbc-3.8.11.1.jar"/>
+        <pathelement location="D:/Lib-Jar/extentreports-java-2.41.2/lib/testng-6.9.9.jar"/>
+        <pathelement location="D:/Lib-Jar/poi-3.14/poi-3.14-20160307.jar"/>
+        <pathelement location="D:/Lib-Jar/poi-3.14/poi-examples-3.14-20160307.jar"/>
+        <pathelement location="D:/Lib-Jar/poi-3.14/poi-excelant-3.14-20160307.jar"/>
+        <pathelement location="D:/Lib-Jar/poi-3.14/poi-ooxml-3.14-20160307.jar"/>
+        <pathelement location="D:/Lib-Jar/poi-3.14/poi-ooxml-schemas-3.14-20160307.jar"/>
+        <pathelement location="D:/Lib-Jar/poi-3.14/poi-scratchpad-3.14-20160307.jar"/>
+        <pathelement location="D:/Lib-Jar/poi-3.14/ooxml-lib/curvesapi-1.03.jar"/>
+        <pathelement location="D:/Lib-Jar/poi-3.14/ooxml-lib/xmlbeans-2.6.0.jar"/>
+        <pathelement location="D:/Lib-Jar/poi-3.14/lib/commons-codec-1.10.jar"/>
+        <pathelement location="D:/Lib-Jar/poi-3.14/lib/commons-logging-1.2.jar"/>
+        <pathelement location="D:/Lib-Jar/poi-3.14/lib/junit-4.12.jar"/>
+        <pathelement location="D:/Lib-Jar/poi-3.14/lib/log4j-1.2.17.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/cglib-nodep-3.2.4.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/commons-codec-1.10.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/commons-exec-1.3.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/commons-io-2.5.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/commons-lang3-3.4.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/commons-logging-1.2.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/cssparser-0.9.20.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/gson-2.3.1.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/guava-19.0.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/hamcrest-core-1.3.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/hamcrest-library-1.3.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/htmlunit-2.23.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/htmlunit-core-js-2.23.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/httpclient-4.5.2.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/httpcore-4.4.4.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/httpmime-4.5.2.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/javax.servlet-api-3.1.0.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/jetty-io-9.2.13.v20150730.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/jetty-util-9.2.13.v20150730.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/jna-4.1.0.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/jna-platform-4.1.0.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/junit-4.12.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/neko-htmlunit-2.23.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/netty-3.5.7.Final.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/phantomjsdriver-1.3.0.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/sac-1.3.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/serializer-2.7.2.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/websocket-api-9.2.15.v20160210.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/websocket-client-9.2.15.v20160210.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/websocket-common-9.2.15.v20160210.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/xalan-2.7.2.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/xercesImpl-2.11.0.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/lib/xml-apis-1.4.01.jar"/>
+        <pathelement location="D:/Lib-Jar/selenium-java-3.0.1/client-combined-3.0.1-nodeps.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="POM.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Tinku">
+        <java classname="com.cleartrip.pageobjects.Tinku" failonerror="true" fork="yes">
+            <classpath refid="POM.classpath"/>
+        </java>
+    </target>
+</project>
